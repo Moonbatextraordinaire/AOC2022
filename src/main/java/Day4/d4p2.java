@@ -22,9 +22,7 @@ public class d4p2 {
             int bot2 = Integer.parseInt(isC.next());
             int top2 = Integer.parseInt(isC.next());
 
-            if (Math.min(bot1,bot2) == bot1 && Math.max(top1,top2) == top1 ||
-                    Math.min(bot1,bot2) == bot2 && Math.max(top1,top2) == top2 ||
-                    bot1 <= bot2 && top1 >= bot2 || bot1 <= top2 && top1 >= top2) {
+            if (bot1 <= top2 && top1 >= bot2 ) {
                 score++;
             }
         }
